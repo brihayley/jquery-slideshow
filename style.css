@@ -1,0 +1,72 @@
+body {
+    background:#b3b3cc;
+}
+header {
+    text-align: center;
+    color:white;
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif;
+    margin:1%;
+}
+#photo-number {
+    color:white;
+    font-size:16px;
+    text-align: center;
+    position:relative;
+    bottom:20px;
+}
+.slideshow-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0f0f5;
+    border:15px solid #52527a;
+    border-radius: 10px;
+    width:70%;
+    height:500px;
+    margin:2% auto 0% auto;
+    position: relative;
+}
+.caption-container {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    color: #52527a;
+    background-color:rgba(255, 255, 255, .7);
+    font-size:1.2em;
+}
+.arrow-container {
+    height:100%;
+    width:95%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.arrow-back, .arrow-front {
+    background-color: rgba(82, 82, 122, .5);
+    width:50px;
+    height:50px;
+    border:2px solid #52527a;
+    border-radius: 50%;
+    line-height: 0em;
+    font-size: 1.9em;
+    color:#f0f0f5;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.arrow-back p, .arrow-front p {
+    position:relative;
+    bottom:8%; 
+    text-align: center;
+}
+.arrow-back:hover, .arrow-front:hover {
+    cursor: pointer;
+    border:4px solid #52527a;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
